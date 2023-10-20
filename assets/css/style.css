@@ -1,15 +1,3 @@
-/*-----------------------------------*\ 
- * #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
  * #CUSTOM PROPERTY 
 \*-----------------------------------*/
@@ -226,6 +214,7 @@ header .container {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+  z-index: 1000;
 }
 
 .navbar-link {
@@ -996,8 +985,6 @@ header .container {
   }
 
   .btn-group { justify-content: flex-start; }
-
-
 
   /**
    * NEW PRODUCT, ABOUT, EXPLORE PRODUCT, TOP SELLER, FOOTER
