@@ -1,0 +1,59 @@
+/*-----------------------------------*\
+ * #HEADER
+\*-----------------------------------*/
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--onyx-1);
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-nav-wrapper { position: relative; }
+  
+  .navbar {
+    background: var(--onyx-1);
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 0;
+    width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    transform: scale(0.8);
+    transform-origin: top right;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: var(--transition);
+  }
+  
+  .navbar.active {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    z-index: 1000;
+  }
+  
+  .navbar-link {
+    background: transparent;
+    color: var(--white);
+    font-size: var(--fs-7);
+    padding: 8px 10px;
+    border-radius: 4px;
+  }
+  
+  .navbar-link:is(:hover, :focus) { background: var(--davys-gray); }
+  
+  .navbar-toggle-btn {
+    color: var(--white);
+    font-size: 30px;
+    padding: 5px;
+  }
+  
+  .header-actions { display: none; }
+  
