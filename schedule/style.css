@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     /* background: url(images/html_table.jpg) center / cover; */
     background-color: black;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
@@ -19,11 +19,11 @@ main.table {
     width: 82vw;
     height: 90vh;
     background-color: #fff5;
-
+    color:black;
     backdrop-filter: blur(7px);
     box-shadow: 0 .4rem .8rem #0005;
     border-radius: .8rem;
-
+    margin: 20px auto;
     overflow: hidden;
 }
 
